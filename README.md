@@ -15,7 +15,7 @@ gem 'minitest_change_assertions'
 
 # Usage
 
-### `assert_changed`
+## `assert_changed`
 
 ```ruby
 assert_changed 'user.name' do
@@ -37,7 +37,7 @@ assert_changed -> { user.name }, to: 'Bob' do
 end
 ```
 
-### `assert_not_changed`
+## `assert_not_changed`
 
 ```ruby
 assert_not_changed 'user.name' do
@@ -60,6 +60,6 @@ end
 ```
 
 # Credits
-Created by Weston Ganger - [@westonganger](https://github.com/westonganger)
+Created by [Weston Ganger](https://westonganger.com) - [@westonganger](https://github.com/westonganger)
 
 For any consulting or contract work please contact me via my company website: [Solid Foundation Web Development](https://solidfoundationwebdev.com)
