@@ -16,42 +16,50 @@ class AssertionsTest < MiniTest::Test
   end
 
   def test_assert_changed
-    assert_changed 'user.name' do
-      user.name = 'Bob'
+    name = 'Allen'
+
+    assert_changed 'name' do
+      name = 'Bob'
     end
 
-    assert_changed -> { user.name } do
-      user.name = 'Bob'
+    assert_changed -> { name } do
+      name = 'Greg'
     end
 
     ### OR with optional :to argument
 
-    assert_changed 'user.name', to: 'Bob' do
-      user.name = 'Bob'
+    assert_changed 'name', to: 'Bob' do
+      name = 'Bob'
     end
 
-    assert_changed -> { user.name }, to: 'Bob' do
-      user.name = 'Bob'
+    assert_changed -> { name }, to: 'Bob' do
+      name = 'Bob'
+    end
+
+    assert_changed -> { name }, to: 'Greg' do
+      name = 'Greg'
     end
   end
 
   def test_assert_not_changed
-    assert_not_changed 'user.name' do
-      user.update(attrs)
+    name = 'Allen'
+
+    assert_not_changed 'name' do
+      name = 'Allen'
     end
 
-    assert_not_changed -> { user.name } do
-      user.update(attrs)
+    assert_not_changed -> { name } do
+      name = 'Allen'
     end
 
     ### OR with optional :to argument
 
-    assert_not_changed 'user.name', to: 'Allen' do
-      user.name = 'Bob'
+    assert_not_changed 'name', to: 'Greg' do
+      name = 'Bob'
     end
 
-    assert_not_changed -> { user.name }, to: 'Allen' do
-      user.name = 'Bob'
+    assert_not_changed -> { name }, to: 'Greg' do
+      name = 'Bob'
     end
   end
 
