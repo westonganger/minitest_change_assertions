@@ -7,16 +7,21 @@ Minitest::Assertions.module_eval do
     end
 
     if opts.key?(:to)
-      expected = opts[:to]
+      to = opts[:to]
     elsif opts.key?('to')
-      expected = opts['to']
+      to = opts['to']
     else
       expected = e.call
     end
 
     block.call
 
-    refute_equal expected, e.call
+
+    if to
+      assert_equal to, e.call
+    else
+      refute_equal expected, e.call
+    end
   end
 
   def assert_not_changed(expression, opts={}, &block)
@@ -27,15 +32,19 @@ Minitest::Assertions.module_eval do
     end
 
     if opts.key?(:to)
-      expected = opts[:to]
+      to = opts[:to]
     elsif opts.key?('to')
-      expected = opts['to']
+      to = opts['to']
     else
       expected = e.call
     end
 
     block.call
 
-    assert_equal expected, e.call
+    if to
+      refute_equal to, e.call
+    else
+      assert_equal expected, e.call
+    end
   end
 end
