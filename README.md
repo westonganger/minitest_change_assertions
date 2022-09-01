@@ -61,5 +61,3 @@ end
 
 # Credits
 Created by [Weston Ganger](https://westonganger.com) - [@westonganger](https://github.com/westonganger)
-
-For any consulting or contract work please contact me via my company website: [Solid Foundation Web Development](https://solidfoundationwebdev.com)
