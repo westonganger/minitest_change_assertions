@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
   s.summary     = 'Provides assertions for your Minitest suite to determine if an object has been changed.'
   s.description = s.summary
   s.files = Dir.glob("{lib/**/*}") + %w{ LICENSE README.md Rakefile CHANGELOG.md }
-  s.test_files  = Dir.glob("{test/**/*}")
 
   s.add_dependency 'minitest'
 
