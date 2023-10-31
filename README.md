@@ -1,9 +1,9 @@
 # Minitest Change Assertions
 
 <a href="https://badge.fury.io/rb/minitest_change_assertions" target="_blank"><img height="21" style='border:0px;height:21px;' border='0' src="https://badge.fury.io/rb/minitest_change_assertions.svg" alt="Gem Version"></a>
-<a href='https://github.com/westonganger/minitest_change_assertions/actions' target='_blank'><img src="https://github.com/westonganger/minitest_change_assertions/workflows/Tests/badge.svg" style="max-width:100%;" height='21' style='border:0px;height:21px;' border='0' alt="CI Status"></a>
+<a href='https://github.com/westonganger/minitest_change_assertions/actions' target='_blank'><img src="https://github.com/westonganger/minitest_change_assertions/actions/workflows/test.yml/badge.svg?branch=master" style="max-width:100%;" height='21' style='border:0px;height:21px;' border='0' alt="CI Status"></a>
 <a href='https://rubygems.org/gems/minitest_change_assertions' target='_blank'><img height='21' style='border:0px;height:21px;' src='https://img.shields.io/gem/dt/minitest_change_assertions?color=brightgreen&label=Rubygems%20Downloads' border='0' alt='RubyGems Downloads' /></a>
-<a href='https://ko-fi.com/A5071NK' target='_blank'><img height='22' style='border:0px;height:22px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
+<a href='https://ko-fi.com/A5071NK' target='_blank'><img height='22' style='border:0px;height:22px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=a' border='0' alt='Buy Me a Coffee' /></a>
 
 Provides assertions for your Minitest suite to determine if an object has been changed.
 
