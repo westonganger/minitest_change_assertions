@@ -8,7 +8,7 @@ require 'minitest/autorun'
 
 require 'minitest_change_assertions'
 
-class AssertionsTest < MiniTest::Test
+class AssertionsTest < Minitest::Test
   def setup
   end
 
