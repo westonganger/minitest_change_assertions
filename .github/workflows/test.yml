@@ -6,7 +6,7 @@ on:
 
 jobs:
   test_sqlite:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -22,6 +22,7 @@ jobs:
           - ruby: "3.2"
           - ruby: "3.3"
           - ruby: "3.4"
+          - ruby: "4.0"
 
     env:
       BUNDLE_GEMFILE: "${{ matrix.gemfile }}"
